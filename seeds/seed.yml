@@ -1,0 +1,11 @@
+version: 2
+
+seeds:
+  - name: dim_genre
+    columns:
+      - name: genre_id
+        tests:
+          - unique
+          - not_null
+      - name: genre
+          
