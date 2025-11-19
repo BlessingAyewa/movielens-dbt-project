@@ -12,6 +12,43 @@ sources:
               - unique
               - not_null
       - name: raw_ratings
+        columns: 
+          - name: movieid
+            tests:
+              - relationships:
+                  to: source('movielens', 'raw_movies')
+                  field: movieid
+
       - name: raw_tags
+        column: 
+          - name: movieid
+            tests:
+              - relationships:
+                  to: source('movielens', 'raw_movies')
+                  field: movieid
       - name: raw_links
+        columns:
+          - name: movieid
+            tests:
+              - unique
+              - not_null              
+
       - name: raw_genome_tags
+        columns:
+          - name: tagid
+            tests: 
+              - unique
+              - not_null
+
+      - name: raw_genome_scores
+        columns:
+          - name: tagid
+            tests: 
+              - relationships:
+                  to: source('movielens', 'raw_genome_tags')
+                  field: tagid              
+          - name: movieid
+            tests:
+              - relationships:
+                  to: source('movielens', 'raw_movies')
+                  field: movieid

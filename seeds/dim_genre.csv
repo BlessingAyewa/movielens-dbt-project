@@ -1,0 +1,21 @@
+genre_id,genre
+gid1,Action
+gid2,Adventure
+gid3,Animation
+gid4,Children
+gid5,Comedy
+gid6,Crime
+gid7,Documentary
+gid8,Drama
+gid9,Fantasy
+gid10,Film-Noir
+gid11,Horror
+gid12,Musical
+gid13,Mystery
+gid14,Romance
+gid15,Sci-Fi
+gid16,Thriller
+gid17,War
+gid18,Western
+gid19,(no genres listed)
+gid20,IMAX

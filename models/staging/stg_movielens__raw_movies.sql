@@ -1,4 +1,4 @@
-with 
+with
 
 source as (
 
@@ -9,7 +9,9 @@ source as (
 renamed as (
 
     select
-
+        movieid as movie_id,
+        title,
+        genres
     from source
 
 )
