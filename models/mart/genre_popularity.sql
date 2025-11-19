@@ -10,5 +10,5 @@ from
 group by
     genre
 order by   
-    2 DESC
+    number_of_movies DESC
 
