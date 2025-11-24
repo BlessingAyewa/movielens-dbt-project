@@ -9,9 +9,16 @@ source as (
 renamed as (
 
     select
-        movieid as movie_id,
-        imdbid as imbd_id,
-        tmdbid as tmbd_id
+        movie_id,
+        imbd_id,
+        imbd_link,
+        tmbd_id,
+        tmbd_link,
+        img_link,
+        budget_value as budget_USD,
+        revenue_value as revenue_USD,
+        lang as original_language
+        
     from source
 
 )
