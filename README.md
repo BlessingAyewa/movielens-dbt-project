@@ -1,4 +1,4 @@
-Welcome to your new dbt project!
+Movielens DBT Project
 
 ### Using the starter project
 
