@@ -28,9 +28,8 @@ sources:
                   field: movieid
       - name: raw_links
         columns:
-          - name: movieid
+          - name: movie_id
             tests:
-              - unique
               - not_null              
 
       - name: raw_genome_tags

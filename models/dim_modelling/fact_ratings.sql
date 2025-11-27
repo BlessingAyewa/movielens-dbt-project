@@ -1,5 +1,5 @@
 select
-    movie_id,
+    distinct movie_id,
     count(*) as number_of_reviews,
     ROUND(avg(rating), 2) as avg_rating
 from 
